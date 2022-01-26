@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="login_container">
+            <div class="profile_container">
+                <img class="profile" src="Group 7.svg" alt="" />
+            </div>
+            <form action="">
+                <label for="personalId">Student ID</label>
+                <input class="studentId" type="text" />
+                <label for="password">Student Reg No</label>
+                <input class="password" type="password" />
+                <input class="form_submit" type="submit" value="Search" />
+            </form>
+        </div>
+        <div class="generate_form hide">
+            <label for="exam_type"></label>
+            <select name="exam_type" id="exam_type">
+                <option value="waec">WAEC</option>
+                <option value="neco">NECO</option>
+                <option value="gsce">GSCE</option>
+                <option value="toful">TOFUL</option>
+            </select>
+            <label for="exam_center"></label>
+            <select name="exam_center" id="exam_center">
+                <option value="nile_hall">Nile Hall</option>
+                <option value="base_hall">Base Hall</option>
+                <option value="garki_jamb_center">Garki Jamb Center</option>
+                <option value="miacal_center">Miracal Center</option>
+            </select>
+            <button class="generetor">Generate Seat Number</button>
+            <div class="generator_result">
+                <p class="seat_number"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
